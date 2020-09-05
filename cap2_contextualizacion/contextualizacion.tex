@@ -39,19 +39,19 @@ Para que una máquina sea inteligente, esta debe:
 
 \subsection{Tipos de inteligencia artificial}
 
-Según Stuart Russell y Peter Norvig, autores del aclamado libro \textit{Inteligencia Artificial: Un enfoque moderno}, hay 4 tipos distintos de inteligencia artificial:
+Según Stuart Russell y Peter Norvig, autores del libro \textit{Inteligencia Artificial: Un enfoque moderno} \cite{russell2002artificial}, hay 4 tipos distintos de inteligencia artificial \cite{russell2002artificial, iaWikipedia}:
 \begin{enumerate}
     \item Sistemas que \textbf{\textit{piensan} como humanos} - estos sistemas tratan de reproducir el pensamiento humano. A esta categoría pertenecen las redes neuronales artificiales. Entre las actividades que se pueden llevar a cabo con estos sistemas son la toma de decisiones, la resolución de problemas y el aprendizaje.
     \item Sistemas que \textbf{\textit{actúan} como humanos} - estos sistemas tratan de imitar el comportamiento humano. Un ejemplo de sistemas de este tipo es la robótica.
-    \item Sistemas que \textbf{\textit{piensan} racionalmente} - estos sistemas tratan de imitar o emular el pensamiento lógico racional del ser humano. Un ejemplo de estos sistemas son los sistemas expertos (como MYCIN).
+    \item Sistemas que \textbf{\textit{piensan} racionalmente} - estos sistemas tratan de imitar o emular el pensamiento lógico racional del ser humano. Un ejemplo de estos sistemas son los sistemas expertos (como \textit{MYCIN} \cite{shortliffe2012computer}).
     \item Sistemas que \textbf{\textit{actúan} racionalmente} - tratan de emular de forma racional el comportamiento humano. A esta última categoría pertenecen los agentes inteligentes, y es el tipo de inteligencia artificial que se ha estado desarrollando para el TFG.
 \end{enumerate}
 
 \subsection{Enfoques de la inteligencia artificial}
 
-Existen dos tipos de enfoques que se siguen cuando se desea implementar un sistema inteligente:
+Existen dos tipos de enfoques que se siguen cuando se desea implementar un sistema inteligente \cite{copeland2020ai}:
 \begin{enumerate}
-    \item Simbólico, o \textit{\textbf{descendente}}: se quiere replicar la inteligencia mediante premisas definidas. Según la hipótesis formulada por Newell y Simon (\textit{physical symbol system hypothesis}) \cite{nilsson2007physical}, \textit{$"$el procesamiento de estructuras de símbolos es suficiente, teóricamente, para producir inteligencia artificial en un ordenador digital y que, además, la inteligencia humana es el resultado del mismo tipo de manipulación simbólica.$"$}
+    \item Simbólico, o \textit{\textbf{descendente}}: se quiere replicar la inteligencia mediante premisas definidas. Según la hipótesis formulada por Newell y Simon (\textit{physical symbol system hypothesis}) \cite{nilsson2007physical, newell2007computer}, \textit{$"$el procesamiento de estructuras de símbolos es suficiente, teóricamente, para producir inteligencia artificial en un ordenador digital y que, además, la inteligencia humana es el resultado del mismo tipo de manipulación simbólica.$"$}
     \item Conexionista, o \textit{\textbf{ascendente}}: se pretende emular las capacidades y el comportamiento del cerebro humano mediante procesos que emergen de redes formadas por unidades sencillas interconectadas (como las neuronas). Las redes neuronales artificiales han sido creadas para que repliquen las conexiones del cerebro humano, de ahí el término \textit{conexionista}. En la siguiente sección se explicará más detenidamente este enfoque. 
 \end{enumerate}
 
@@ -160,7 +160,11 @@ Las interacciones vienen definidas, de tal manera que se conoce para cada una de
 
 El enfoque ascendente, también conocido como \textit{conexionismo} o \textit{computación neuronal}, se ha desarrollado como un intento de entender cómo funciona el cerebro humano a nivel neuronal y, más concretamente, cómo las personas \textit{aprenden} y son capaces de \textit{recordar}. \\
 
-En 1943, el neurólogo Warren McCulloch y el matemático Walter Pitts publicaron un trabajo sobre las redes neuronales en el cual se exponía que una neurona del cerebro \textbf{es como un procesor digital}, y que el cúmulo de éstas componen \textbf{una máquina computacional}; al fin y al cabo, el cerebro es un sistema que \textit{calcula} acciones que el humano debe tomar. As McCulloch put it subsequently, “What we thought we were doing (and I think we succeeded fairly well) was treating the brain as a Turing machine.”
+En 1943, el neurólogo Warren McCulloch y el matemático Walter Pitts publicaron un trabajo \cite{mcculloch1943logical} sobre las redes neuronales en el cual se exponía que una neurona del cerebro \textbf{es como un procesor digital}, y que el cúmulo de éstas componen \textbf{una máquina computacional}; al fin y al cabo, el cerebro es un sistema que \textit{calcula} acciones que el humano debe tomar. Discutiendo sobre sus investigaciones, McCulloch señaló
+
+\begin{displayquote}\textit{
+What we thought we were doing (and I think we succeeded fairly well) was treating the brain as a Turing machine.}
+\end{displayquote}
 
 \subsection{Creación de una red neuronal}
 
