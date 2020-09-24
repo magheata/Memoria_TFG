@@ -10,6 +10,25 @@
 
 \usepackage{wrapfig}
 
+\usepackage{listings}
+
+\usepackage{multirow}
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
 \usepackage[draft=false, backref, hyperindex, plainpages=false, breaklinks=true, bookmarksnumbered=true]{hyperref}
 
 \usepackage{todonotes}
@@ -20,15 +39,15 @@
 
 \usepackage{caption}
 
-\usepackage{subcaption}
+\usepackage[linesnumbered, ruled,vlined]{algorithm2e}
 
 \estudis{\MakeUppercase{Grado en Ingeniería Informática}}
 
-\title{Reinforcement Learning para un entorno cooperativo multi-agente}
+\title{Resolución de un problema de búsqueda mediante la aplicación del aprendizaje por refuerzo}
 
 \author{\MakeUppercase{Miruna Andreea Gheata}}
 
-\tutor{Isaac Castro Lera \and Gabriel Moyà Alcover}
+\tutor{Isaac Lera Castro \and Gabriel Moyà Alcover}
 
 \begin{document}
 
@@ -71,15 +90,13 @@ Això és una dedicatòria %Posau aquí tot el que vulgueu
 
 \include{cap2_contextualizacion/contextualizacion}
 
-\include{cap3_definicion_proyecto/definicion_proyecto}
+\include{cap3_analisis_tecnico/analisis_tecnico}
 
-\include{cap4_analisis_tecnico/analisis_tecnico}
+\include{cap4_diseño_implementacion/diseño_implementacion}
 
-\include{cap5_conceptos_tecnicos/conceptos_tecnicos}
+\include{cap5_experimentacion/experimentacion}
 
-\include{cap6_implementacion/implemetacion}
-
-\include{cap7_conclusiones/conclusiones}
+\include{cap6_conclusiones/conclusiones}
 
 %%%%%%% Fi cos del treball %%%%%%%%%%%
 

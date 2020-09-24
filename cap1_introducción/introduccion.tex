@@ -1,14 +1,49 @@
 %!TeX root=MemoriaTFG.tex
 
-\chapter{Introducción}\label{introduccion}
+\chapter{Introducción} \label{introduccion}
 % \todo{Esto es una prueba. Isaac}
 
+El documento presente es la memoria de un \textbf{Trabajo de Fin de Grado} de la carrera de \textbf{Ingeniería Informática}; el proyecto se enmarca en el ámbito de la \textbf{Inteligencia Artificial} y, más concretamente, \textbf{en el desarrollo de sistemas inteligentes} y autónomos que son capaces de \textit{cumplir unos objetivos concretos} y de \textit{aprender de su experiencia} para mejorar su desempeño. 
 
-\section{Contenido de la memoria}
+\section{Definición del proyecto}
 
-\section{Organización de la memória}
+El problema abordado en este proyecto es crear un \textit{ecosistema} compuesto por \textbf{un agente inteligente} y \textbf{un entorno matricial} en el cual existe \textbf{un objetivo} que el agente debe ser capaz de alcanzar de forma autónoma. \\
 
-Esta es una breve introducción a los distintos capítulos que componen esta memoria. \\
+
+Para que el agente pueda \textit{aprender} a moverse por el entorno se aplicarán técnicas de \textbf{aprendizaje por refuerzo}: mediante un sistema de recompensas y penalizaciones, el agente podrá determinar si sus acciones son adecuadas con cada movimiento que realiza en el entorno. \\
+
+Al cabo del aprendizaje y con la \textit{experiencia} que el agente desarrollará, éste será capaz de alcanzar todos los objetivos de tal manera que recibirá la máxima recompensa posible; por lo que, en definitiva, significará que se conseguirá alcanzar un sistema inteligente. 
+
+\section{Justificación del proyecto. Estado del arte}
+
+En los últimos años, el mundo de la Inteligencia Artificial se ha enfocado en los sistemas inteligentes, entre los cuales se encuentran los \textit{coches autónomos} \cite{bimbraw2015autonomous}, los \textit{sistemas expertos} \cite{shortliffe2012computer} (empleados en los ámbitos científicos, médicos, etc.), la \textit{robótica desarrollada para entornos cooperativos} \cite{bostonDynamics, bdyn2018doors}, etc. \\
+
+Además de estos productos a gran escala, y con un fin más enfocado a la investigación y no a la producción, también se ha ido desarrollando aplicaciones y sistemas que son capaces realizar acciones tales como
+
+\begin{itemize}
+    \item \textbf{Aprender a caminar} \cite{deepmind2017AI}. El \textit{DeepMind} de Google tenía como objetivo llegar de un punto A a un punto B. En el estudio realizado \cite{deepmind2017walking} explican que
+    
+    \begin{displayquote}\textit{
+     The difficulty of accurately describing a complex behaviour is a common problem when teaching motor skills to an artificial system. In this work we explore how sophisticated behaviors can emerge from scratch from the body interacting with the environment using only simple high-level objectives, such as moving forward without falling.}
+    \end{displayquote}
+    \item \textbf{Jugar a videojuegos }\cite{medium2019NNVideoGames, openai2019five, berner2019dota}. Destaca el sistema inteligente que consiguió jugar al \textit{Dota 2} en equipo (es decir, varios agentes inteligentes cooperando en un mismo entorno con distintas habilidades pero teniendo un objetivo común); el sistema ha desarrollado estas capacidades mediante un entreno en el cual \textit{$"$ha jugado a más de 10.000 años de juegos contra si mismo$"$}.
+    \item \textbf{Crear música} mezclando estilos o a partir de canciones de artistas reales \cite{jukebox2020openai}.
+    \item \textbf{Jugar al pilla-pilla \textit{en equipos}} y utilizar objetos de su entorno para ganar \cite{openAI2019MARL}.
+    \item \textbf{Crear nuevas imágenes} empleando imágenes ya existentes \cite{artbreeder}; un ejemplo sería la transformación de las estatuas de los antiguos emperadores romanos en imágenes fotorealistas \cite{theverge2020artbreeder}.
+    \item \textbf{Resolver un cubo Rubik} con un brazo robótico y en \textbf{\textit{condiciones desfavorables}} (como por ejemplo atando 3 de los 5 dedos con una goma) \cite{rubik2019openai}.
+\end{itemize}
+
+\section{Objetivos del proyecto}
+
+El objetivo principal de este proyecto es \textbf{estudiar el uso de las técnicas de \textit{aprendizaje por refuerzo} para implementar sistemas inteligentes} que: 
+\begin{enumerate}
+    \item Exploran su entorno y valoran las percepciones antes de actuar sobre el mismo.
+    \item Interaccionan con su entorno de forma independiente y responden por si mismos frente a los distintos estímulos proporcionados el mismo.
+    \item Alcanzan objetivos propuestos independientes y distintos de una manera eficiente y satisfactoria.
+    \item Maximizan sus probabilidades de éxito y las recompensas que puede obtener por alcanzar sus objetivos. 
+\end{enumerate}
+
+\section{Esquema de la memoria}
 
 En el capítulo 2 \textbf{se explicarán brevemente los conceptos más importantes} que se deben conocer para poder tener una base inicial antes de profundizar con el tema del trabajo. En concreto, se introducirá el concepto de inteligencia artificial, los tipos que existen, los enfoques abordados en su diseño, las redes neuronales artificiales y los distintos tipos de aprendizaje utilizados para su entreno. \\
 
@@ -19,3 +54,7 @@ En el capítulo 4 \textbf{se realiza un análisis técnico del proyecto} en el q
 En el capítulo 5 \textbf{se explicarán los conceptos técnicos} que se emplearán en la memoria. \\
 
 En el capítulo 6 \textbf{se profundiza en la implementación del proyecto}. \\
+
+\section{Observaciones}
+
+Cabe destacar que a lo largo de esta memoria se emplearán tanto términos españoles como términos anglosajones para describir los distintos conceptos planteados. 
